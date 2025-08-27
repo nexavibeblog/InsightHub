@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsightHub - Your Source for Knowledge</title>
+    <meta
+      name="description"
+      content="Explore insightful articles on technology, lifestyle, and more at InsightHub."
+    />
+    <meta
+      name="keywords"
+      content="blog, technology, lifestyle, insights, knowledge"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="InsightHub - Your Source for Knowledge"
+    />
+    <meta
+      property="og:description"
+      content="Explore insightful articles on technology, lifestyle, and more at InsightHub."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://insighthub.com" />
+    <meta property="og:site_name" content="InsightHub" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white font-sans">
+    <!-- Navbar -->
+    <nav
+      class="bg-gradient-to-r from-teal-600 to-cyan-500 shadow-md fixed w-full z-10"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-14">
+          <div class="flex items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+              <svg
+                class="w-8 h-8 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.747 0-3.332.477-4.5 1.253"
+                ></path>
+              </svg>
+              <h1 class="text-xl font-semibold text-white"><a href="/index.html">InsightHub</a></h1>
+            </div>
+          </div>
+          <div class="flex items-center space-x-6">
+            <a
+              href="/index.html"
+              class="text-white hover:text-teal-100 px-3 py-2 rounded-md text-sm font-medium"
+              >Home</a
+            >
+            <a
+              href="#blog"
+              class="text-white hover:text-teal-100 px-3 py-2 rounded-md text-sm font-medium"
+              >Blog</a
+            >
+            <a
+              href="#about"
+              class="text-white hover:text-teal-100 px-3 py-2 rounded-md text-sm font-medium"
+              >About</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 pb-12 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 tracking-tight"
+        >
+          Discover InsightHub
+        </h2>
+        <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+          Your destination for thought-provoking articles on technology,
+          lifestyle, and beyond.
+        </p>
+        <a
+          href="#blog"
+          class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-teal-700 transition"
+          >Read Our Blogs</a
+        >
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Recent Articles
+        </h2>
+        <div
+          id="blog-posts"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Blog posts will be dynamically inserted here -->
+        </div>
+        <div class="text-center mt-10">
+          <button
+            id="load-more"
+            class="bg-teal-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-teal-700 transition"
+          >
+            Load More Articles
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">
+          About InsightHub
+        </h2>
+        <p
+          class="text-base text-gray-600 text-center max-w-3xl mx-auto leading-relaxed"
+        >
+          InsightHub is dedicated to delivering engaging and informative content
+          that sparks curiosity and fosters learning. Explore our diverse range
+          of topics and join our growing community of knowledge seekers.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-teal-600 py-6">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-white text-sm">
+          &copy; 2025 InsightHub. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      const blogPosts = [
+        {
+          title: "Webtraffic für Webseite Schweiz",
+          excerpt: "Wie die Webseite mehr Webtraffic- Webbesucher bekommt. Wie bekommt meine Websites mehr Webtraffic? Wie kann man mehr Traffic auf der Website generieren? Lesen Sie hier wie man den Webtraffic der monatliche Besucher ersichtlich erhöhen kann.",
+          date: "August 26, 2025",
+          url:"/webtraffic-fur-webseite-schweiz.html",
+        }
+      ];
+
+      const postsContainer = document.getElementById("blog-posts");
+      const loadMoreBtn = document.getElementById("load-more");
+      let displayedPosts = 3;
+
+      function renderPosts() {
+        postsContainer.innerHTML = blogPosts
+          .slice(0, displayedPosts)
+          .map(
+            (post) => `
+                <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">${post.title}</h3>
+                    <p class="text-gray-600 mb-4 text-sm">${post.excerpt}</p>
+                    <div class="text-xs text-gray-500 mb-4">${post.date}</div>
+                    <a href="${post.url}" class="text-teal-600 hover:underline text-sm">Read Article</a>
+                </div>
+            `
+          )
+          .join("");
+        loadMoreBtn.style.display =
+          displayedPosts >= blogPosts.length ? "none" : "block";
+      }
+
+      loadMoreBtn.addEventListener("click", () => {
+        displayedPosts += 3;
+        renderPosts();
+      });
+
+      // Initial render
+      renderPosts();
+    </script>
+  </body>
+</html>
